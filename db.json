@@ -9,6 +9,11 @@
       "id": "2",
       "email": "ujez@test.com",
       "password": "ujez"
+    },
+    {
+      "email": "isaac",
+      "password": "never",
+      "id": "SfndLlm"
     }
   ]
 }

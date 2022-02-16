@@ -34,6 +34,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "App",
   data() {
@@ -43,8 +45,12 @@ export default {
     };
   },
   methods: {
-    addUser() {
-      console.log("func calls", this.email, this.password);
+   async addUser() {
+      let result = await axios.post("http://localhost:3000/user", {
+        email: this.email,
+        password: this.password,
+      });
+      console.log(result);
     },
   },
 };
